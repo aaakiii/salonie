@@ -26,6 +26,7 @@ public class Driver {
         for (int i = 0; i < list.salonList.size(); i++) {
             if (list.salonList.get(i) instanceof HairSalon) {
                 System.out.println(list.salonList.get(i));
+                System.out.println(list.salonList.get(i));
             }
         }
     }
