@@ -73,4 +73,6 @@ abstract public class SalonsInfo {
 
         return result;
     }
+
+    
 }

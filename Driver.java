@@ -16,17 +16,15 @@ public class Driver {
      */
     public static void main(String[] args) {
         Salons list = new Salons();
-        list.output();
-
+        SalonTypeSwitch test = new SalonTypeSwitch();
+        
+        //adds facorite
         list.favo(1, true);
+        list.favo(1, false);
+        
         System.out.println();
-        System.out.println("=================================");
-        System.out.println();
-
-        for (int i = 0; i < list.salonList.size(); i++) {
-            if (list.salonList.get(i) instanceof HairSalon) {
-                System.out.println(list.salonList.get(i));
-            }
-        }
+        
+        //switchs display HairSalon or NailSalon
+        test.switchSalonType(HairSalon.class);
     }
 }
